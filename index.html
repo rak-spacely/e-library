@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placid Projects Limited | Your Gateway to Unlimited Knowledge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="branding">
+          <span class="logo-icon" aria-hidden="true">PP</span>
+          <div>
+            <a class="brand-name" href="index.html">Placid Projects Limited</a>
+            <p class="tagline">Your Gateway to Unlimited Knowledge</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <form class="search-form" role="search" aria-label="Site search">
+            <label class="sr-only" for="search-input">Search the library</label>
+            <input
+              id="search-input"
+              type="search"
+              name="search"
+              placeholder="Search thousands of books..."
+              autocomplete="off"
+            />
+            <button type="submit" aria-label="Submit search">
+              <span aria-hidden="true">Search</span>
+            </button>
+          </form>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle__icon" aria-hidden="true">Light</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+      <nav id="primary-navigation" class="primary-nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Digital E-Library Platform</p>
+          <h1>Explore. Learn. Grow.</h1>
+          <p class="hero__subtitle">
+            Access thousands of free PDF books and educational resources across
+            all subjects. Start your learning journey today.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#popular-categories">Browse Library</a>
+            <a class="btn btn-secondary" href="contact.html">Sign Up Free</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular-categories" class="section categories">
+        <div class="section__header">
+          <h2>Popular Categories</h2>
+          <p class="section__lead">
+            Discover curated collections handpicked by our content team.
+          </p>
+        </div>
+        <div class="category-grid" data-filter-group>
+          <article class="category-card" data-category="technology programming">
+            <div class="category-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Technology &amp; Programming</h3>
+            <p>1,200+ books</p>
+          </article>
+          <article class="category-card" data-category="business finance">
+            <div class="category-icon" aria-hidden="true">$$</div>
+            <h3>Business &amp; Finance</h3>
+            <p>850+ books</p>
+          </article>
+          <article class="category-card" data-category="science medicine">
+            <div class="category-icon" aria-hidden="true">SCI</div>
+            <h3>Science &amp; Medicine</h3>
+            <p>980+ books</p>
+          </article>
+          <article class="category-card" data-category="literature fiction">
+            <div class="category-icon" aria-hidden="true">Aa</div>
+            <h3>Literature &amp; Fiction</h3>
+            <p>1,500+ books</p>
+          </article>
+          <article class="category-card" data-category="personal development">
+            <div class="category-icon" aria-hidden="true">+</div>
+            <h3>Personal Development</h3>
+            <p>650+ books</p>
+          </article>
+          <article class="category-card" data-category="history politics">
+            <div class="category-icon" aria-hidden="true">H+</div>
+            <h3>History &amp; Politics</h3>
+            <p>720+ books</p>
+          </article>
+        </div>
+        <p class="search-feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="section featured-books">
+        <div class="section__header">
+          <h2>Trending Downloads This Week</h2>
+          <p class="section__lead">
+            Our community is loving these popular titles right now.
+          </p>
+        </div>
+        <div class="book-grid">
+          <article class="book-card">
+            <div class="book-cover" aria-hidden="true"></div>
+            <div class="book-content">
+              <h3>The Complete Python Developer</h3>
+              <p class="book-meta">Jennifer Martinez &middot; Programming</p>
+              <ul class="book-stats">
+                <li>Size: 3.2&nbsp;MB</li>
+                <li>456 pages</li>
+                <li>Rating: 4.8<span aria-hidden="true">*</span></li>
+              </ul>
+              <button class="btn btn-link" type="button">Download PDF</button>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover" aria-hidden="true"></div>
+            <div class="book-content">
+              <h3>Digital Marketing Mastery</h3>
+              <p class="book-meta">Robert Chen &middot; Business</p>
+              <ul class="book-stats">
+                <li>Size: 2.1&nbsp;MB</li>
+                <li>298 pages</li>
+                <li>Rating: 4.6<span aria-hidden="true">*</span></li>
+              </ul>
+              <button class="btn btn-link" type="button">Download PDF</button>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover" aria-hidden="true"></div>
+            <div class="book-content">
+              <h3>Understanding Human Psychology</h3>
+              <p class="book-meta">Dr. Sarah Williams &middot; Psychology</p>
+              <ul class="book-stats">
+                <li>Size: 2.8&nbsp;MB</li>
+                <li>387 pages</li>
+                <li>Rating: 4.7<span aria-hidden="true">*</span></li>
+              </ul>
+              <button class="btn btn-link" type="button">Download PDF</button>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover" aria-hidden="true"></div>
+            <div class="book-content">
+              <h3>Modern Web Design Principles</h3>
+              <p class="book-meta">Alex Johnson &middot; Design</p>
+              <ul class="book-stats">
+                <li>Size: 1.9&nbsp;MB</li>
+                <li>245 pages</li>
+                <li>Rating: 4.5<span aria-hidden="true">*</span></li>
+              </ul>
+              <button class="btn btn-link" type="button">Download PDF</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stats">
+        <div class="section__header">
+          <h2>Join Thousands of Learners</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <h3>15,000+</h3>
+            <p>Books Available</p>
+            <span>And growing every month</span>
+          </article>
+          <article class="stat-card">
+            <h3>2M+</h3>
+            <p>Downloads</p>
+            <span>Learning materials delivered</span>
+          </article>
+          <article class="stat-card">
+            <h3>120+</h3>
+            <p>Countries</p>
+            <span>Global community of readers</span>
+          </article>
+          <article class="stat-card">
+            <h3>100%</h3>
+            <p>Free Access</p>
+            <span>No hidden fees, ever</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section how-it-works">
+        <div class="section__header">
+          <h2>Getting Started is Easy</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <h3>Browse or Search</h3>
+            <p>
+              Explore our categories or use the search function to find exactly
+              what you need.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <h3>Preview &amp; Select</h3>
+            <p>
+              Read book descriptions, check ratings, and preview sample pages
+              before downloading.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <h3>Download &amp; Learn</h3>
+            <p>
+              Click download to get your PDF instantly. Read on any device,
+              anytime, anywhere.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#popular-categories">Browse Library</a></li>
+            <li><a href="#popular-categories">Popular Books</a></li>
+            <li><a href="#popular-categories">New Arrivals</a></li>
+            <li><a href="contact.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>support@placidprojects.com</p>
+          <p>Building a world where knowledge is accessible to all.</p>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links">
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a> 
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2024 Placid Projects Limited. All rights reserved.
+      </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
