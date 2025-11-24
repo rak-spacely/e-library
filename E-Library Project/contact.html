@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Placid Projects Limited</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="branding">
+          <span class="logo-icon" aria-hidden="true">PP</span>
+          <div>
+            <a class="brand-name" href="index.html">Placid Projects Limited</a>
+            <p class="tagline">Your Gateway to Unlimited Knowledge</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <form class="search-form" role="search" aria-label="Site search">
+            <label class="sr-only" for="search-input-contact">Search the library</label>
+            <input
+              id="search-input-contact"
+              type="search"
+              name="search"
+              placeholder="Search thousands of books..."
+              autocomplete="off"
+            />
+            <button type="submit" aria-label="Submit search">
+              <span aria-hidden="true">Search</span>
+            </button>
+          </form>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle__icon" aria-hidden="true">Light</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+      <nav id="primary-navigation" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section hero hero--subpage">
+        <div class="hero__content">
+          <p class="eyebrow">Get in Touch</p>
+          <h1>We would love to hear from you</h1>
+          <p class="hero__subtitle">
+            Whether you have a question, suggestion, or partnership idea, our
+            team is ready to help.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-intro">
+        <div class="content-column">
+          <h2>We would love to hear from you</h2>
+          <p>
+            Whether you are a reader with feedback, an author interested in
+            contributing, an educator looking to partner with us, or just
+            someone with a question, we are here to help. Our team reads every
+            message and typically responds within 48 hours. Use the form below
+            to get in touch, or reach us through the contact details provided.
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-form-section">
+        <div class="form-wrapper">
+          <h2>Send us a message</h2>
+          <form data-contact-form novalidate>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                name="fullName"
+                type="text"
+                placeholder="Enter your full name"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-address">Email Address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                placeholder="your.email@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="book-request">Book Request</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="author-partnership">Author or Publisher Partnership</option>
+                <option value="education-partnership">Educational Institution Partnership</option>
+                <option value="report-problem">Report a Problem</option>
+                <option value="feedback">Feedback and Suggestions</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us how we can help you, or share your thoughts about Placid Projects..."
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-note">
+              All fields are required. We respect your privacy and will never
+              share your contact information with third parties.
+            </p>
+            <p class="form-feedback" role="alert" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section other-contact">
+        <div class="section__header">
+          <h2>Other Ways to Connect</h2>
+        </div>
+        <div class="other-contact__grid">
+          <article>
+            <h3>General Support</h3>
+            <p>support@placidprojects.com</p>
+          </article>
+          <article>
+            <h3>Author and Publisher Inquiries</h3>
+            <p>partnerships@placidprojects.com</p>
+          </article>
+          <article>
+            <h3>Technical Issues</h3>
+            <p>tech@placidprojects.com</p>
+          </article>
+          <article>
+            <h3>Press and Media</h3>
+            <p>press@placidprojects.com</p>
+          </article>
+        </div>
+        <div class="social-callout">
+          <h3>Join Our Community</h3>
+          <p>
+            Follow us on social media for new book announcements, reading
+            recommendations, and educational tips.
+          </p>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section faq-preview">
+        <div class="section__header">
+          <h2>Quick Answers</h2>
+        </div>
+        <div class="faq-grid">
+          <article>
+            <h3>Is Placid Projects really free?</h3>
+            <p>
+              Yes. All books in our core library are completely free to
+              download. We offer an optional premium membership that provides
+              early access to new releases and additional features, but the
+              majority of our content is freely accessible to everyone.
+            </p>
+          </article>
+          <article>
+            <h3>Can I request specific books?</h3>
+            <p>
+              Absolutely. While we cannot guarantee every request can be
+              fulfilled due to licensing requirements, we track all requests and
+              do our best to add highly requested titles. Use the contact form
+              above to share your request.
+            </p>
+          </article>
+          <article>
+            <h3>What formats do you offer?</h3>
+            <p>
+              Currently, all books are available as PDF downloads, optimized for
+              both desktop and mobile reading. We are working on adding EPUB and
+              MOBI formats in the near future.
+            </p>
+          </article>
+          <article>
+            <h3>How can I support Placid Projects?</h3>
+            <p>
+              The best way to support us is to use the platform and share it
+              with others who could benefit. We also accept donations and offer
+              a premium membership. If you are an author or educator, consider
+              contributing content to our collection.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#popular-categories">Browse Library</a></li>
+            <li><a href="index.html#popular-categories">Popular Books</a></li>
+            <li><a href="index.html#popular-categories">New Arrivals</a></li>
+            <li><a href="contact.html">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>support@placidprojects.com</p>
+          <p>Building a world where knowledge is accessible to all.</p>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="social-links">
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2024 Placid Projects Limited. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
+
